@@ -10,7 +10,8 @@ audio_path = os.path.join(os.path.dirname(__file__), nom_du_fichier)
 if os.path.exists(audio_path):
     with open(audio_path, 'rb') as audio_file:
         audio_bytes = audio_file.read()
-    st.audio(audio_bytes, format='audio/mp3')
+    st.write(f"Taille du fichier audio : {len(audio_bytes)} octets")
+    st.audio(audio_bytes, format='audio/mpeg')  # Teste aussi 'audio/mpeg'
 else:
     st.error(f"⚠️ Fichier '{nom_du_fichier}' introuvable !")
     st.write("Vérifie qu'il est bien dans le dossier à côté de streamlit_app.py")
