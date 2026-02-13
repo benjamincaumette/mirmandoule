@@ -8,11 +8,16 @@ st.set_page_config(
 )
 st.markdown("""
 <style>
-
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 /* GLOBAL */
 html, body, [class*="css"] {
     color: #000000 !important;
-    font-family: Georgia, serif;
+            .medievalsharp-regular {
+  font-family: "MedievalSharp", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 }
 
 /* Fond */
@@ -38,7 +43,7 @@ html, body, [class*="css"] {
 /* Titres */
 h1 {
     color: #000000 !important;
-    font-size: 28px !important;
+    font-size: 40px !important;
     text-align: center;
 }
 
@@ -301,7 +306,7 @@ elif not st.session_state.termine:
     </div>
     """, unsafe_allow_html=True)
 
-    reponse_finale = st.text_input("le coffre")
+    reponse_finale = st.text_input("le coffreemplacement du trésor")
 
     if st.button("Révéler le trésor"):
 
