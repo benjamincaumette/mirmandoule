@@ -103,7 +103,7 @@ p, div, span, label {
 .stTextInput input {
 
     font-size: 18px;
-
+color: #ffffff
 }
 
 /* Progress bar spacing */
