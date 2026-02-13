@@ -13,6 +13,7 @@ st.markdown("""
 /* 1. Force le NOIR sur absolument tout le texte de l'app */
 html, body, [data-testid="stWidgetLabel"], .stMarkdown, p, h1, h2, h3, span, label {
     color: #000000 !important;
+            font-family: "MedievalSharp", cursive;
 }
 
 /* 2. Exception : Texte en BLANC uniquement pour les étiquettes (tags) du Multiselect */
