@@ -347,7 +347,7 @@ elif not st.session_state.termine:
     </div>
     """, unsafe_allow_html=True)
 
-    reponse_finale = st.text_input("le coffreemplacement du trésor")
+    reponse_finale = st.text_input("emplacement du trésor")
 
     if st.button("Révéler le trésor"):
 
