@@ -51,7 +51,7 @@ h2 {
 }
 
 h3 {
-    color: #000000 !important;
+    color: #ffffff !important;
     font-size: 20px !important;
 }
 
