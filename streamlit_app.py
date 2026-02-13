@@ -1,7 +1,18 @@
 import streamlit as st
 
-with open("audio.mp3", "rb") as f:
-    st.audio(f.read(), format="audio/mp3")
+import os
+
+# 1. Remplace EXACTEMENT par le nom de ton fichier entre les guillemets
+nom_du_fichier = "audio.mp3" 
+
+# 2. Vérification et lecture
+if os.path.exists(nom_du_fichier):
+    audio_file = open(nom_du_fichier, 'rb')
+    audio_bytes = audio_file.read()
+    st.audio(audio_bytes, format='audio/mp3')
+else:
+    st.error(f"⚠️ Fichier '{nom_du_fichier}' introuvable !")
+    st.write("Vérifie qu'il est bien dans le dossier à côté de streamlit_app.py")
 
 from PIL import Image
 st.set_page_config(
