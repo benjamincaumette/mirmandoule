@@ -195,7 +195,7 @@ LIEUX = [
 
 ENIGME_FINALE = {
     "question": "Quel est le point commun entre tous ces lieux ?",
-    "reponse": "mirmandoule"
+    "reponse": "le coffre"
 }
 
 # =========================
@@ -305,7 +305,7 @@ elif not st.session_state.termine:
 
     if st.button("Révéler le trésor"):
 
-        if reponse_finale.lower().strip() == ENIGME_FINALE["le coffre"]:
+        if reponse_finale.lower().strip() == ENIGME_FINALE["reponse"]:
 
             st.session_state.termine = True
             st.rerun()
