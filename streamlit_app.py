@@ -47,6 +47,7 @@ h1 {
 h2 {
     color: #000000 !important;
     font-size: 24px !important;
+            font-family: "MedievalSharp", cursive;
 }
 
 h3 {
