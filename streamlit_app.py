@@ -243,6 +243,7 @@ st.title("🏰 La quête de Mirmandoule l'amoureux")
 
 st.markdown("""
 <div class="medieval-box">
+            
 Bienvenue, belle aventurière.
 
 Mirmandoule a dissimulé un trésor précieux dans ce village.
