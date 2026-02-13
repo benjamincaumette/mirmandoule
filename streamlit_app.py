@@ -339,15 +339,15 @@ elif not st.session_state.termine:
 
     st.markdown("""
     <div class="medieval-box">
-    Tu as découvert tous les lieux.
+    Tu as résolu toutes les énigmes de Mirmandoule !
 
-    Il ne reste qu'une ultime épreuve.
-
-    Quel est le point commun entre tous ces lieux ?
+   
+"tu y retourne après les artisans", "tu dois franchir cet homme pour m'atteindre", "tu es passé devant au moins 5 foys", "cha ch'appelle comme un coffre-fort", "on me présente en toute lettre"
+    Quel est le point commun qui permettra de révéler l'emplacement du trésor ?
     </div>
     """, unsafe_allow_html=True)
 
-    reponse_finale = st.text_input("emplacement du trésor")
+    reponse_finale = st.text_input("cachette de mirmandoule")
 
     if st.button("Révéler le trésor"):
 
@@ -373,7 +373,7 @@ else:
 
     st.markdown("""
     <div class="medieval-box">
-    Félicitations, noble aventurier.
+    Félicitations, noble aventurière.
 
     Tu as prouvé ta sagesse, ton courage et ta valeur.
 
