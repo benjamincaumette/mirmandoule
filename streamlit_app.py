@@ -51,7 +51,7 @@ h2 {
 }
 
 h3 {
-    color: #ffffff !important;
+    color: #000000 !important;
     font-size: 20px !important;
 }
 
@@ -220,11 +220,11 @@ st.title("🏰 La quête de Mirmandoule l'amoureux")
 
 st.markdown("""
 <div class="medieval-box">
-Bienvenue, noble aventurier.
+Bienvenue, belle aventurière.
 
-Mirmandoule a dissimulé un trésor précieux dans le royaume.
+Mirmandoule a dissimulé un trésor précieux dans ce village.
 
-Résous chaque énigme pour découvrir son emplacement.
+Résous toutes ces énigmes pour découvrir son emplacement.
 
 Que ta quête commence...
 </div>
