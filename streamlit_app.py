@@ -28,7 +28,7 @@ div[role="listbox"] div {
 
 /* 4. Fix pour la taille du titre (H1) qui résistait */
 .stMarkdown h1 {
-    font-size: 80px !important; /* Ajuste à ta guise */
+    font-size: 100px !important; /* Ajuste à ta guise */
     font-family: "MedievalSharp", cursive !important;
 }
 html, body, [class*="css"] {
@@ -74,6 +74,7 @@ h2 {
 h3 {
     color: #000000 !important;
     font-size: 20px !important;
+            font-family: "MedievalSharp", cursive;
 }
 
 /* Texte normal */
