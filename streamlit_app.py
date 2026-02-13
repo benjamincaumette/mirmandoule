@@ -12,13 +12,9 @@ st.markdown("""
 /* GLOBAL */
 html, body, [class*="css"] {
     color: #000000 !important;
-            .medievalsharp-regular {
   font-family: "MedievalSharp", cursive;
   font-weight: 400;
   font-style: normal;
-}
-
-}
 
 /* Fond */
 .stApp {
@@ -44,6 +40,7 @@ html, body, [class*="css"] {
 h1 {
     color: #000000 !important;
     font-size: 40px !important;
+    font-family: "MedievalSharp", cursive;
     text-align: center;
 }
 
