@@ -1,6 +1,8 @@
 import streamlit as st
+
 with open("audio.mp3", "rb") as f:
     st.audio(f.read(), format="audio/mp3")
+
 from PIL import Image
 st.set_page_config(
     page_title="La quête de Mirmandoule l'amoureux",
