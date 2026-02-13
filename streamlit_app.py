@@ -10,6 +10,27 @@ st.markdown("""
 <style>
 @import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 /* GLOBAL */
+/* 1. Force le NOIR sur absolument tout le texte de l'app */
+html, body, [data-testid="stWidgetLabel"], .stMarkdown, p, h1, h2, h3, span, label {
+    color: #000000 !important;
+}
+
+/* 2. Exception : Texte en BLANC uniquement pour les étiquettes (tags) du Multiselect */
+span[data-baseweb="tag"] {
+    background-color: #333333 !important; /* Fond sombre pour que le blanc se voie */
+    color: #ffffff !important;
+}
+
+/* 3. Exception : Texte en BLANC dans la liste d'options qui s'ouvre */
+div[role="listbox"] div {
+    color: #ffffff !important;
+}
+
+/* 4. Fix pour la taille du titre (H1) qui résistait */
+.stMarkdown h1 {
+    font-size: 80px !important; /* Ajuste à ta guise */
+    font-family: "MedievalSharp", cursive !important;
+}
 html, body, [class*="css"] {
     color: #000000 !important;
   font-family: "MedievalSharp", cursive;
