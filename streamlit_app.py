@@ -216,7 +216,7 @@ if "termine" not in st.session_state:
 # TITRE
 # =========================
 
-st.title("🏰 La quête de Mirmandoule l'amoureux")
+st.title("🏰 La quête de Mirmandoule l'amoureux"){color: #000000}
 
 st.markdown("""
 <div class="medieval-box">
@@ -226,7 +226,7 @@ Mirmandoule a dissimulé un trésor précieux dans ce village.
 
 Résous toutes ces énigmes pour découvrir son emplacement.
 
-Que ta quête commence...
+Que ta quête commence...{color: #000000; font-family: "MedievalSharp"}
 </div>
 """, unsafe_allow_html=True)
 
