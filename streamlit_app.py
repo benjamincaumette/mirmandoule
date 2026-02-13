@@ -37,12 +37,12 @@ html, body, [class*="css"] {
 }
 
 /* Titres */
-h1 {
+h1, .stMarkdown h1, [data-testid="stHeader"] h1 {
     color: #000000 !important;
     font-size: 100px !important;
-    font-family: "MedievalSharp", cursive;
-    text-align: center;
-}
+    font-family: "MedievalSharp", cursive !important;
+    text-align: center !important;
+    line-height: 1.1 !important; /* Pour éviter que le texte ne se chevauche à 100px */
 
 h2 {
     color: #000000 !important;
@@ -103,7 +103,6 @@ p, div, span, label {
 .stTextInput input {
 
     font-size: 18px;
-color: #ffffff
 }
 
 /* Progress bar spacing */
