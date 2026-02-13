@@ -57,7 +57,7 @@ h3 {
 
 /* Texte normal */
 p, div, span, label {
-    color: #ffffff !important;
+    color: #FF8C00 !important;
     font-size: 18px;
 }
 
@@ -220,13 +220,13 @@ st.title("🏰 La quête de Mirmandoule l'amoureux")
 
 st.markdown("""
 <div class="medieval-box">
-h2("Bienvenue, belle aventurière.
+Bienvenue, belle aventurière.
 
 Mirmandoule a dissimulé un trésor précieux dans ce village.
 
 Résous toutes ces énigmes pour découvrir son emplacement.
 
-Que ta quête commence...")
+Que ta quête commence...
 </div>
 """, unsafe_allow_html=True)
 
