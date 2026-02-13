@@ -39,7 +39,7 @@ html, body, [class*="css"] {
 /* Titres */
 h1 {
     color: #000000 !important;
-    font-size: 40px !important;
+    font-size: 100px !important;
     font-family: "MedievalSharp", cursive;
     text-align: center;
 }
