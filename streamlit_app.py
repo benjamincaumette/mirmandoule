@@ -1,4 +1,12 @@
 import streamlit as st
+import base64
+
+# Remplace "ton_fichier.mp3" par le nom exact de ton fichier
+with open("audio.mp3", "rb") as f:
+    audio_base64 = base64.b64encode(f.read()).decode()
+
+st.markdown(f'<audio autoplay loop src="data:audio/mp3;base64,{audio_base64}">', unsafe_allow_html=True)
+
 from PIL import Image
 st.set_page_config(
     page_title="La quête de Mirmandoule l'amoureux",
