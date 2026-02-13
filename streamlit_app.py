@@ -227,7 +227,7 @@ Mirmandoule a dissimulé un trésor précieux dans ce village.
 
 Résous toutes ces énigmes pour découvrir son emplacement.
 
-Que ta quête commence...{color: #000000; font-family: "MedievalSharp"}
+Que ta quête commence...
 </div>
 """, unsafe_allow_html=True)
 
