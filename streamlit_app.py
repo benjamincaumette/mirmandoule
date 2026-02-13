@@ -1,4 +1,5 @@
 import streamlit as st
+from PIL import Image
 st.set_page_config(
     page_title="La quête de Mirmandoule l'amoureux",
     page_icon="🏰",
