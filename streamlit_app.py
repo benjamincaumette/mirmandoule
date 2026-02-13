@@ -57,7 +57,7 @@ h3 {
 
 /* Texte normal */
 p, div, span, label {
-    color: #000000 !important;
+    color: #ffffff !important;
     font-size: 18px;
 }
 
