@@ -1,7 +1,15 @@
 import streamlit as st
 
-with open("audio.mp3", "rb") as f:
-    st.audio(f.read(), format="audio/mp3")
+import os
+
+# 1. On vérifie si le fichier existe pour éviter de faire planter l'app
+file_name = "audio.mp3"  # <--- METS LE VRAI NOM DE TON FICHIER ICI
+
+if os.path.exists(file_name):
+    with open(file_name, "rb") as f:
+        st.audio(f.read(), format="audio/mp3")
+else:
+    st.error(f"Fichier '{file_name}' non trouvé. Vérifie qu'il est bien dans le dossier.")
 
 from PIL import Image
 st.set_page_config(
