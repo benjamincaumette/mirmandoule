@@ -216,7 +216,7 @@ if "termine" not in st.session_state:
 # TITRE
 # =========================
 
-st.title("🏰 La quête de Mirmandoule l'amoureux"){color: #000000}
+st.title("🏰 La quête de Mirmandoule l'amoureux") {color: #000000}
 
 st.markdown("""
 <div class="medieval-box">
