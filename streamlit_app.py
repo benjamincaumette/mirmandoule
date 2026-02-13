@@ -57,7 +57,8 @@ h3 {
 
 /* Texte normal */
 p, div, span, label {
-    color: #FF8C00 !important;
+    color: #000000 !important;
+  font-family: "MedievalSharp", cursive;
     font-size: 18px;
 }
 
