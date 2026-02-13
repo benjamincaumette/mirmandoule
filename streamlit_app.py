@@ -3,12 +3,13 @@ import streamlit as st
 import os
 
 # 1. Remplace EXACTEMENT par le nom de ton fichier entre les guillemets
-nom_du_fichier = "audio.mp3" 
+nom_du_fichier = "audio.mp3"
 
-# 2. Vérification et lecture
-if os.path.exists(nom_du_fichier):
-    audio_file = open(nom_du_fichier, 'rb')
-    audio_bytes = audio_file.read()
+# 2. Vérification et lecture avec chemin absolu
+audio_path = os.path.join(os.path.dirname(__file__), nom_du_fichier)
+if os.path.exists(audio_path):
+    with open(audio_path, 'rb') as audio_file:
+        audio_bytes = audio_file.read()
     st.audio(audio_bytes, format='audio/mp3')
 else:
     st.error(f"⚠️ Fichier '{nom_du_fichier}' introuvable !")
@@ -270,11 +271,13 @@ Que ta quête commence...
 """, unsafe_allow_html=True)
 
 
+
 # =========================
 # CARTE
 # =========================
 
-image = Image.open("carte.png")
+carte_path = os.path.join(os.path.dirname(__file__), "carte.png")
+image = Image.open(carte_path)
 st.image(image, use_container_width=True)
 
 
